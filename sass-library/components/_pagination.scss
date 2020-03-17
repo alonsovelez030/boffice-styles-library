@@ -1,0 +1,123 @@
+$cnd_assets_path: 'https://cdn.statically.io/gh/alonsovelez030/boffice-styles-library/master/public/';
+
+.paginator-container{
+  border-top: transparent;
+
+  pagination-controls{
+    float: right;
+  }
+
+  ::ng-deep {
+    .fotmat-font{
+      font-family: 'Proxima Nova Alt Regular';
+      color: #9faab7;
+      font-size: 12px;
+    }
+    .ngx-pagination{
+      padding-left: 0;
+      margin-top: 6px;
+      margin-bottom: 0;
+      a:hover{
+        background: none;
+        text-decoration: none;
+      }
+      li a{
+        margin-left: 5px;
+        @extend .fotmat-font;
+      }
+      .pagination-next,
+      .pagination-previous{
+        padding: 0 !important;
+        position: relative;
+        top: 4px;
+      }
+      .pagination-next,
+      .pagination-previous{
+        padding: 5px 20px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0px 11px 23px -13px rgba(0, 0, 0, 0.4);
+      }
+      .pagination-next a,
+      .pagination-previous a{
+        @extend .fotmat-font;
+        padding: 0;
+        margin-left: 0;
+        display: inherit;
+      }
+
+      .small-screen,
+      .pagination-next span,
+      .pagination-previous span{
+        @extend .fotmat-font;
+      }
+
+      .pagination-next.disabled,
+      .pagination-previous.disabled{
+        padding: 5px 20px;
+        box-shadow: 0 11px 23px -13px rgba(0, 0, 0, 0.4);
+      }
+
+      .arrow-styles{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+      }
+
+      .pagination-next a::after{
+        content: '';
+        background: url($cnd_assets_path + 'assets/icons/next-arrow-black.svg');
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        @extend .arrow-styles;
+      }
+
+      .pagination-next.disabled::after{
+        content: '';
+        background: url($cnd_assets_path + 'assets/icons/next-arrow-black.svg');
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        @extend .arrow-styles;
+      }
+
+      .pagination-previous.disabled::before {
+        content: '';
+        background: url($cnd_assets_path + 'assets/icons/back-arrow-black.svg');
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        @extend .arrow-styles;
+      }
+      .pagination-previous a::before {
+        content: '';
+        background: url($cnd_assets_path + 'assets/icons/back-arrow-black.svg');
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        @extend .arrow-styles;
+      }
+
+      .current {
+        border-radius: 100%;
+        background-color: $cr-rappi;
+        color: white;
+        font-size: 12px;
+        padding: 0;
+        box-shadow: 0 5px 7px -5px rgba(0, 0, 0, 0.4);
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        text-align: center;
+        span:last-child{
+          line-height: 25px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

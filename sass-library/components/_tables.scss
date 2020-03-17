@@ -1,0 +1,12 @@
+@import '../abstracts/mixins';
+
+table {
+  tr {
+    border-bottom: 1px solid #e8e8e8;
+    @include font-guide(14px, #1f2532, 500);
+    th {
+      @include font-guide(13px, #1f2532, 500);
+      background: #fafafa;
+    }
+  }
+}
