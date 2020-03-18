@@ -11,6 +11,9 @@
         background-color: $white;
         color: $light-green;
     }
+    &.bof-btn-primary {
+        background-color: $cr-rappi;
+    }
     &.bof-p-outline:hover { opacity: 1; }
 
     &:hover{
