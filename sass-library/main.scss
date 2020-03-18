@@ -10,6 +10,7 @@
 @import "abstracts/colors";
 @import "abstracts/mixins";
 @import "abstracts/keyframes";
+@import 'abstracts/layout';
 
 /* Components */
 @import "components/forms";
@@ -59,3 +60,27 @@
     &.bof-p-error{ color: $flat-red;}
     &.bof-p-pending{ color: $gray;}
 }
+
+code.sql {
+    font-family: monospace;
+    background-color: #000;
+}
+.sql-hl-keyword {
+    color: #f000f0;
+}
+.sql-hl-function {
+    color: #ff0000;
+}
+.sql-hl-number {
+    color: #00ff00;
+}
+.sql-hl-string {
+    color: #00ff00;
+}
+.sql-hl-special {
+    color: #ffff00;
+}
+.sql-hl-bracket {
+    color: #ffff00;
+}
+  
