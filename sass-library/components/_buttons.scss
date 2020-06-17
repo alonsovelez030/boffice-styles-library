@@ -14,6 +14,12 @@
     &.bof-btn-primary {
         background-color: $cr-rappi;
     }
+    &.bof-btn-success {
+        background-color: $grn-2;
+    }
+    &.bof-btn-default {
+        background-color: $gray-2;
+    }
     &.bof-p-outline:hover { opacity: 1; }
 
     &:hover{
